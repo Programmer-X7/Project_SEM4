@@ -23,15 +23,6 @@ To copy the repository in local run the command in git bash
   git clone https://github.com/Programmer-X7/Minor_Project.git
 ```
 
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
-
 ## Tech Stack
 
 **Client:** HTML, CSS, JavaScript, Bootstrap
