@@ -4,7 +4,7 @@
 This is a Minor Project repository.
 
 
-## Authors
+## DEVs
 
 - [@Programmer-X7](https://www.github.com/Programmer-X7) (Suman)
 - [@WASDTitaniuM](https://www.github.com/WASDTitaniuM)
