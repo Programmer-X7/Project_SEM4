@@ -32,3 +32,17 @@ def headphones(request):
 
 def monitors(request):
     return render(request, "pages/product_pages/monitors.html", {})
+
+
+
+def lt_model_1(request):
+    return render(request, "pages/product_pages/laptop_pages/lt-model1.html", {})
+
+def lt_model_2(request):
+    return render(request, "pages/product_pages/laptop_pages/lt-model2.html", {})
+
+def lt_model_3(request):
+    return render(request, "pages/product_pages/laptop_pages/lt-model3.html", {})
+
+def lt_model_4(request):
+    return render(request, "pages/product_pages/laptop_pages/lt-model4.html", {})

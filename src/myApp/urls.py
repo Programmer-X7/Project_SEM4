@@ -13,5 +13,10 @@ urlpatterns = [
     path("keyboards", views.keyboards, name='keyboards'),
     path("headphones", views.headphones, name='headphones'),
     path("monitors", views.monitors, name='monitors'),
+    
+    path("laptop+model+1", views.lt_model_1, name='laptop+model+1'),
+    path("laptop+model+2", views.lt_model_2, name='laptop+model+2'),
+    path("laptop+model+3", views.lt_model_3, name='laptop+model+3'),
+    path("laptop+model+4", views.lt_model_4, name='laptop+model+4'),
 ]
 
