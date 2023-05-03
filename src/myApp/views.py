@@ -10,8 +10,8 @@ def about(request):
 def products(request):
     return render(request, "pages/products.html", {})
 
-# def index(request):
-#     return render(request, "pages/service.html", {})
+def services(request):
+    return render(request, "pages/services.html", {})
 
 def contact(request):
     return render(request, "pages/contact.html", {})
