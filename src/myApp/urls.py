@@ -1,9 +1,11 @@
 from django.contrib import admin
 from django.urls import path
 from myApp import views
+from .views import SignUpView
 
 urlpatterns = [
     # User Section
+    path("signup", SignUpView.as_view(), name="signup"),
     path("login", views.loginUser, name='login'),
     path("logout", views.logoutUser, name='logoutUser'),
 
