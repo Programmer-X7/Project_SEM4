@@ -1,4 +1,30 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.models import User
+from django.contrib.auth import logout, authenticate, login
+
+
+# User Section
+
+# UN: suman
+# PW: sumanmondal@S7
+
+def loginUser(request):
+    if request.method=="POST":
+        username=request.POST.get('username')
+        password=request.POST.get('password')
+        user = authenticate(username=username, password=password)
+
+        if user is not None:
+            login(request, user)
+            return render("pages/profile.html")
+        else:
+            return render(request, "login.html")
+        
+    return render(request, "login.html")
+
+def logoutUser(request):
+    logout(request)
+    return render(request, "pages/home.html")
 
 # Navbar section 
 def index(request):
@@ -17,6 +43,8 @@ def contact(request):
     return render(request, "pages/contact.html", {})
 
 def profile(request):
+    if request.user.is_anonymous:
+        return redirect(("/login"))
     return render(request, "pages/profile.html", {})
 
 def cart(request):

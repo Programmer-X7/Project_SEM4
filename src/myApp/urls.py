@@ -3,6 +3,10 @@ from django.urls import path
 from myApp import views
 
 urlpatterns = [
+    # User Section
+    path("login", views.loginUser, name='login'),
+    path("logout", views.logoutUser, name='logoutUser'),
+
     # Navbar Section
     path("", views.index, name='home'),
     path("about", views.about, name='about'),
