@@ -18,6 +18,9 @@ urlpatterns = [
     path("profile", views.profile, name='profile'),
     path("cart", views.cart, name='cart'),
 
+    #Checkout and payment Section
+    path("checkout", views.checkout, name="checkout"),
+
     # Product Section
     path("laptops", views.laptops, name='laptops'),
     path("mice", views.mice, name='mice'),
