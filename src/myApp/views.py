@@ -11,8 +11,15 @@ from django.views import generic
 
 # User Section
 
+# superUser
+# UN: BCET
+# PW: BCET@123
+
 # UN: suman
 # PW: sumanmondal@S7
+
+# UN: user2
+# PW: sumanmondal@S72
 
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
@@ -39,6 +46,7 @@ def logoutUser(request):
     logout(request)
     return render(request, "pages/home.html")
 
+
 # Navbar section 
 def index(request):
     return render(request, "pages/home.html", {})
@@ -62,6 +70,13 @@ def profile(request):
 
 def cart(request):
     return render(request, "pages/cart.html", {})
+
+
+# Checkout and Payment Section
+def checkout(request):
+    if request.user.is_anonymous:
+        return redirect(("/login"))
+    return render(request, "pages/checkout.html", {})
 
 
 # Product Section 
