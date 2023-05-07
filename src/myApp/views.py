@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import logout, authenticate, login
 
-from django.contrib.auth.forms import UserCreationForm
+from .forms import SignUpForm, UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
 
@@ -21,10 +21,25 @@ from django.views import generic
 # UN: user2
 # PW: sumanmondal@S72
 
-class SignUpView(generic.CreateView):
-    form_class = UserCreationForm
-    success_url = reverse_lazy("login")
-    template_name = "signup.html"
+def signup(request):
+    form = SignUpForm(request.POST or None)
+    if form.is_valid():
+        username = form.cleaned_data.get('username')
+        password = form.cleaned_data.get('password1')
+        form.save()
+
+        form = SignUpForm()
+
+    context = {
+        "form":form
+    }
+    return render (request, "signup.html", context)
+
+
+# class SignUpView(generic.CreateView):
+#     form_class = UserCreationForm
+#     success_url = reverse_lazy("login")
+#     template_name = "signup.html"
 
 
 def loginUser(request):
