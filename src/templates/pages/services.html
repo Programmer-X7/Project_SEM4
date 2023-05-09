@@ -4,16 +4,53 @@
 
 <!-- Main Content Starts Here -->
 
-<div class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-  <div class="text-center">
-    <p class="text-base font-semibold text-indigo-600">404</p>
-    <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not ready yet Bro!</h1>
-    <p class="mt-6 text-base leading-7 text-gray-600">Nikal l*ure, Paheli fursat pe nikal!</p>
-    <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
-      <a href="#" class="text-sm font-semibold text-gray-900">Contact support <span aria-hidden="true">&rarr;</span></a>
-    </div>
+<!-- nav row section   -->
+<div class="w-2/3 mb-2 h-auto px-8 bg-white">
+  <div class="container text-sm opacity-80 py-3">
+    <a class="hover:text-red-600" href="/">Home</a>
+    >
+    <a class="hover:text-red-600" href="/services">Services</a>
+    >
+    <a class="hover:text-red-600" href="#">Warranty Status-Inquiry</a>
+  </div>
+  <div>
+    <P class="font-semibold">WARRANTY STATUS INQUIRY</P>
   </div>
 </div>
+
+<section>
+  <div>
+    <span class="text-center">
+      <p class="font-semibold text-2xl">CHECK YOUR WARRANTY STATUS</p>
+    </span>
+    <div>
+
+      <form>
+        {% csrf_token %}
+        <label for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-500">Search</label>
+        <div class="relative m-auto" style="width: 25rem;">
+          <input type="search" id="default-search"
+            class="block w-full p-3 pl-10 text-sm text-white border border-gray-300 bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter Your Serial Number" required>
+          <span class="block">
+            <p>How to find the product S/N?</p>
+          </span>
+
+          <span class="block">
+            
+            <p class="text-sm"> <input type="checkbox" id="t&c" name="t&c" value="true"> I agree to provide my product serial number to ASUS to inquire the warranty period of my product, and also agree to the "<a class="text-black hover:text-red-600 hover:underline" href="#">ROG Privacy Policy</a>”</p>
+          </span>
+        </div>
+      </form>
+
+      <div>
+        <button class="border border-black px-4 py-2 bg-red-600" style="margin-left: 47%;">
+          submit
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
