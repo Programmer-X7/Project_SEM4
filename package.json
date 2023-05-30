@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "dev": "tailwindcss -i src/static/tw/tailwind-input.css -o src/static/css/localBuisnessWebsite-ui.css --watch" 
+    "dev": "tailwindcss -i src/static/tw/tailwind-input.css -o src/static/css/localBuisnessWebsite-ui.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "node": "^20.2.0"
   }
 }

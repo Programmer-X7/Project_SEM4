@@ -27,7 +27,17 @@ To copy the repository in local run the command in git bash
 ```
 
 #### Run the project
-To run the project first open terminal in the project directory and run
+To run the project first open terminal in the project directory and install Virtual Environment and Node :
+
+```bash
+  npm install node
+```
+
+```bash
+  python -m venv venv
+```
+
+Now activate Virual Environment
 
 ```bash
   venv/scripts/activate
@@ -55,6 +65,7 @@ And the last step, run
 ```bash
   python manage.py runserver
 ```
+
 
 
 ## Tech Stack
