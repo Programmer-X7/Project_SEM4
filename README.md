@@ -45,6 +45,11 @@ After than open another terminal in same directory and run
   venv/scripts/activate
 ```
 
+
+```bash
+  cd src
+```
+
 And the last step, run
 
 ```bash
