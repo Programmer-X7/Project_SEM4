@@ -23,7 +23,7 @@ This is a Minor Project repository.
 To copy the repository in local run the command in git bash
 
 ```bash
-  git clone https://github.com/Programmer-X7/Minor_Project.git
+  git clone https://github.com/Programmer-X7/Project_SEM4.git
 ```
 
 #### Run the project
