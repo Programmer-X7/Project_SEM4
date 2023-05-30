@@ -6,8 +6,11 @@ This is a Minor Project repository.
 
 ## DEVs
 
-- [@Programmer-X7](https://www.github.com/Programmer-X7) (Suman)
-- [@WASDTitaniuM](https://www.github.com/WASDTitaniuM)
+- [@SumanMondal](https://www.github.com/Programmer-X7)
+- [@SujitMondal]
+- [@ArnabAkuli]
+- [@SounakGhosal]
+- [@HritwikGhosh]
 
 
 
@@ -23,9 +26,35 @@ To copy the repository in local run the command in git bash
   git clone https://github.com/Programmer-X7/Minor_Project.git
 ```
 
+#### Run the project
+To run the project first open terminal in the project directory and run
+
+```bash
+  venv/scripts/activate
+```
+
+Then run
+
+```bash
+  npm run dev
+```
+
+After than open another terminal in same directory and run
+
+```bash
+  venv/scripts/activate
+```
+
+And the last step, run
+
+```bash
+  python manage.py runserver
+```
+
+
 ## Tech Stack
 
-**Client:** HTML, CSS, JavaScript, Bootstrap
+**Client:** HTML, CSS, JavaScript, Bootstrap, Tailwind CSS
 
 **Server:** Django, SQLite
 
@@ -33,18 +62,7 @@ To copy the repository in local run the command in git bash
 ## 🚀 About Us
 We are Students of Bengal College of Engineering and Technology (BCET), Durgapur.
 
-Bachelor of Technology in Computer Science and Engineering.
-
-
-
-## FAQ
-
-#### Have any doubt ?
-
-Feel free to Ask Programmer-X7 👨‍💻
-
-
 
 ## Feedback
 
-If you have any feedback, please reach out to us at [Whatsapp](https://web.whatspp.com/groups/Minor-project).
+If you have any feedback, please reach out to us at [Email](sumanmondalgaming@gmail.com).
