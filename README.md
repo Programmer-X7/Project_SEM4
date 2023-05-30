@@ -7,10 +7,10 @@ This is a Minor Project repository.
 ## DEVs
 
 - [@SumanMondal](https://www.github.com/Programmer-X7)
-- [@SujitMondal]
-- [@ArnabAkuli]
-- [@SounakGhosal]
-- [@HritwikGhosh]
+- @SujitMondal
+- @ArnabAkuli
+- @SounakGhosal
+- @HritwikGhosh
 
 
 
